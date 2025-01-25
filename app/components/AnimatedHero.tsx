@@ -163,14 +163,7 @@ export default function AnimatedHero() {
             variants={itemVariants}
             className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-purple-500/20"
           >
-            <Button
-              variant="outline"
-              size="lg"
-              className="w-full border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white"
-              asChild
-            >
-              <Link href="/register">I Want To Work</Link>
-            </Button>
+         
             <p className="text-gray-300 mt-4 text-center">Join our community of successful freelancers</p>
           </motion.div>
         </motion.div>

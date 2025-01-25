@@ -1,8 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Bitcoin, EclipseIcon as Ethereum, DollarSign, Shield, Users, Lock } from "lucide-react"
+import { Bitcoin, EclipseIcon as Ethereum, DollarSign, Shield, Users, Lock, FileCheck } from "lucide-react"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 const PaymentIcon = ({ icon: Icon, color, delay }: { icon: any; color: string; delay: number }) => (
   <motion.div
@@ -140,7 +141,22 @@ export default function Features() {
                 icon={Lock}
                 delay={0.5}
               />
+              <FeatureCard
+                title="Quality Assurance"
+                description="Our verification process ensures high-quality work from skilled professionals."
+                icon={FileCheck}
+                delay={0.6}
+              />
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.7 }}
+            >
+             
+            </motion.div>
           </div>
         </div>
       </div>

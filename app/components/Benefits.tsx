@@ -1,7 +1,7 @@
 "use client"
-import { motion} from "framer-motion"
 
-import { Shield, Clock, Trophy, Zap } from "lucide-react";
+import { motion } from "framer-motion"
+import { Shield, Clock, Trophy, Zap } from "lucide-react"
 
 const benefits = [
   {
@@ -28,17 +28,17 @@ const benefits = [
     description:
       "Your payments are protected with our secure escrow system. Only release payment when you're 100% satisfied with the work.",
   },
-];
-export default function Benefits() {
+]
 
+export default function Benefits() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 0, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center mb-12 text-color black"
+          className="text-3xl md:text-4xl font-bold text-center mb-12 text-black"
         >
           Why Hire Freelancers On Latium?
         </motion.h2>
@@ -50,21 +50,21 @@ export default function Benefits() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <motion.div
-            key={benefit.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.2 }}
-            className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
-          >
-            
-            <benefit.icon className="w-12 h-12 text-purple-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
-            <p className="text-gray-600">{benefit.description}</p>
-          </motion.div>
+              key={benefit.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2 }}
+              className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow"
+            >
+              <benefit.icon className="w-12 h-12 text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-black">{benefit.title}</h3>
+              <p className="text-gray-700">{benefit.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
+
