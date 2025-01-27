@@ -10,9 +10,6 @@
         "lint": "next lint"
     },
     "dependencies": {
-
-
-
         "@hookform/resolvers": "^3.9.1",
         "@radix-ui/react-accordion": "^1.2.2",
         "@radix-ui/react-alert-dialog": "^1.1.4",
@@ -66,8 +63,6 @@
         "zod": "^3.24.1"
     },
     "devDependencies": {
-
-
         "@types/node": "^22.10.10",
         "@types/react": "^18.3.18",
         "@types/react-dom": "^18",
@@ -75,5 +70,13 @@
         "postcss": "^8.5.1",
         "tailwindcss": "^3.4.17",
         "typescript": "^5"
-    }
+    },
+    "description": "A cutting-edge decentralized freelancing platform that combines blockchain technology with a user-friendly interface. This project ensures trustless payments, secure file storage, and seamless connections between clients and freelancers.",
+    "main": "tailwind.config.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
